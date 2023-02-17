@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AstroKnow</title>
+    <meta name="description" content="Astroknow" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo"  src="Img/mylogo.png"  <!--הלוגו של המשחק שלכם-->
+                <p>AstroKnow</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <p>אודות</p>
+            <p>
+                אפיון ופיתוח: עמית נוריאל, יובל ולצר ועמית דאבוש
+            </p>
+            <p> אופיין ופותח במסגרת פרויקט בקורסים:</p>
+            <p>
+                סביבות לימוד אינטראקטיביות 1 + תכנות אינטראקטיבי 1
+                תשפ"ג
+            </p>
+            <img src="Img/hitLogo.png"/> <br/>
+            <a href="https://www.hit.ac.il/">מכון טכנולוגי חולון</a>
+
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>
+                המשימה שלך היא לחזור הביתה בבטחה על ידי פיצוץ האסטרואידים אשר חוסמים את דרכך הביתה!
+            </p>
+            <p>   כל אסטרואיד שיתפוצץ יקדם אותך הביתה.</p>
+            <p>  איך נפוצץ את האסטרואידים?</p>
+            <p>בלחיצת עכבר נבחר את האסטרואיד הנכון לפי המשימה שקיבלת.</p>
+            <p> למשל- אם המשימה היא מדינות ודגלים ונתונה לך מדינה, נלחץ על הדגל של אותה המדינה, נפוצץ את האסטרואיד ונחזור הביתה בבטחה!</p>
+
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם -->
+            <iframe id="gameIframe" src="https://simmer.io/@amitdabush/astroknow" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
